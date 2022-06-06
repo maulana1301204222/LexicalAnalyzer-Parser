@@ -106,6 +106,125 @@ transition_list[["q7", ""]] = "ACCEPT";
 transition_list[["q7", " "]] = "q25";
 transition_list[["q25", " "]] = "q25";
 
+// verb
+// verb  lessen
+transition_list[["q25", "l"]] = "q26";
+transition_list[["q26", "e"]] = "q27";
+transition_list[["q27", "s"]] = "q28";
+transition_list[["q28", "s"]] = "q29";
+transition_list[["q29", "e"]] = "q50";
+transition_list[["q50", "n"]] = "q51";
+transition_list[["q51", "#"]] = "ACCEPT";
+transition_list[["q51", ""]] = "ACCEPT";
+transition_list[["q51", " "]] = "q52";
+transition_list[["q52", " "]] = "q52";
+
+// verb essen
+transition_list[["q25", "e"]] = "q27";
+transition_list[["q27", "s"]] = "q28";
+transition_list[["q28", "s"]] = "q29";
+transition_list[["q29", "e"]] = "q50";
+transition_list[["q50", "n"]] = "q51";
+transition_list[["q51", "#"]] = "ACCEPT";
+transition_list[["q51", ""]] = "ACCEPT";
+transition_list[["q51", " "]] = "q52";
+transition_list[["q52", " "]] = "q52";
+
+// verb waschen
+transition_list[["q25", "w"]] = "q30";
+transition_list[["q30", "a"]] = "q31";
+transition_list[["q31", "s"]] = "q32";
+transition_list[["q32", "c"]] = "q33";
+transition_list[["q33", "h"]] = "q29";
+transition_list[["q29", "e"]] = "q50";
+transition_list[["q50", "n"]] = "q51";
+transition_list[["q51", "#"]] = "ACCEPT";
+transition_list[["q51", ""]] = "ACCEPT";
+transition_list[["q51", " "]] = "q52";
+transition_list[["q52", " "]] = "q52";
+
+// verb sehen
+transition_list[["q25", "s"]] = "q34";
+transition_list[["q34", "e"]] = "q33";
+transition_list[["q33", "h"]] = "q29";
+transition_list[["q29", "e"]] = "q50";
+transition_list[["q50", "n"]] = "q51";
+transition_list[["q51", "#"]] = "ACCEPT";
+transition_list[["q51", ""]] = "ACCEPT";
+transition_list[["q51", " "]] = "q52";
+transition_list[["q52", " "]] = "q52";
+
+// verb offen
+transition_list[["q25", "o"]] = "q35";
+transition_list[["q35", "f"]] = "q36";
+transition_list[["q36", "f"]] = "q29";
+transition_list[["q29", "e"]] = "q50";
+transition_list[["q50", "n"]] = "q51";
+transition_list[["q51", "#"]] = "ACCEPT";
+transition_list[["q51", ""]] = "ACCEPT";
+transition_list[["q51", " "]] = "q52";
+transition_list[["q52", " "]] = "q52";
+    
+// verb bekomen
+transition_list[["q38", "k"]] = "q39";
+transition_list[["q39", "o"]] = "q40";
+transition_list[["q40", "m"]] = "q29";
+transition_list[["q29", "e"]] = "q50";
+transition_list[["q50", "n"]] = "q51";
+transition_list[["q51", "#"]] = "ACCEPT";
+transition_list[["q51", ""]] = "ACCEPT";
+transition_list[["q51", " "]] = "q52";
+transition_list[["q52", " "]] = "q52";
+
+// verb benutzen
+transition_list[["q25", "b"]] = "q37";
+transition_list[["q37", "e"]] = "q38";
+transition_list[["q38", "n"]] = "q41";
+transition_list[["q41", "u"]] = "q42";
+transition_list[["q42", "t"]] = "q43";
+transition_list[["q43", "z"]] = "q29";
+transition_list[["q29", "e"]] = "q50";
+transition_list[["q50", "n"]] = "q51";
+transition_list[["q51", "#"]] = "ACCEPT";
+transition_list[["q51", ""]] = "ACCEPT";
+transition_list[["q51", " "]] = "q52";
+transition_list[["q52", " "]] = "q52";
+
+// verb putzen
+transition_list[["q25", "p"]] = "q41";
+transition_list[["q41", "u"]] = "q42";
+transition_list[["q42", "t"]] = "q43";
+transition_list[["q43", "z"]] = "q29";
+transition_list[["q29", "e"]] = "q50";
+transition_list[["q50", "n"]] = "q51";
+transition_list[["q51", "#"]] = "ACCEPT";
+transition_list[["q51", ""]] = "ACCEPT";
+transition_list[["q51", " "]] = "q52";
+transition_list[["q52", " "]] = "q52";
+
+// verb ritten 
+transition_list[["q25", "r"]] = "q44";
+transition_list[["q44", "i"]] = "q45";
+transition_list[["q45", "t"]] = "q46";
+transition_list[["q46", "t"]] = "q29";
+transition_list[["q29", "e"]] = "q50";
+transition_list[["q50", "n"]] = "q51";
+transition_list[["q51", "#"]] = "ACCEPT";
+transition_list[["q51", ""]] = "ACCEPT";
+transition_list[["q51", " "]] = "q52";
+transition_list[["q52", " "]] = "q52";
+    
+// verb finden
+transition_list[["q25", "f"]] = "q47";
+transition_list[["q47", "i"]] = "q48";
+transition_list[["q48", "n"]] = "q49";
+transition_list[["q49", "d"]] = "q29";
+transition_list[["q29", "e"]] = "q50";
+transition_list[["q50", "n"]] = "q51";
+transition_list[["q51", "#"]] = "ACCEPT";
+transition_list[["q51", ""]] = "ACCEPT";
+transition_list[["q51", " "]] = "q52";
+transition_list[["q52", " "]] = "q52";
 
 const lexicalAnalyzer = () =>{
     var idx_char = 0;
